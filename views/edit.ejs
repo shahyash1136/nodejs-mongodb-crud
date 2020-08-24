@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="text-center mb-4 mt-4">Edit Data</h2>
+          <form action="/users/<%= userData.id%>?_method=PUT" method="post">
+            <%- include('_form_fields') %>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
